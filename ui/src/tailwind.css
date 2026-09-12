@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "@ryu/ui/app-ui.css";
+@source "./";
+@source "../../../../packages/ui/src/components/button.tsx";
+@source "../../../../packages/ui/src/components/dialog.tsx";
+@source "../../../../packages/ui/src/components/input.tsx";
+@source "../../../../packages/ui/src/components/textarea.tsx";
+@source "../../../../packages/ui/src/components/badge.tsx";
+@source "../../../../packages/ui/src/components/tabs.tsx";
+
+.recorder-layout {
+	display: grid;
+	grid-template-columns: minmax(16rem, 1fr) minmax(0, 2fr);
+	gap: 2rem;
+	width: 100%;
+	max-width: 76rem;
+	margin-inline: auto;
+}
+.recorder-timeline {
+	padding-inline-start: 1.25rem;
+	border-inline-start: 1px solid var(--border);
+}
+.recorder-segment {
+	position: relative;
+	padding-block: 0.75rem;
+}
+.recorder-segment::before {
+	position: absolute;
+	inset-inline-start: -1.5rem;
+	top: 1.1rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	content: "";
+	background: var(--muted-foreground);
+	border-radius: 50%;
+}
+.recorder-intro {
+	max-width: 48rem;
+	padding-block: 1rem;
+}
+.recorder-detail {
+	min-width: 0;
+}
+@media (max-width: 720px) {
+	.recorder-intro[data-detail="true"] {
+		display: none;
+	}
+	.recorder-layout {
+		grid-template-columns: minmax(0, 1fr);
+		gap: 1.5rem;
+	}
+	.recorder-library[data-detail="true"] {
+		display: none;
+	}
+}
