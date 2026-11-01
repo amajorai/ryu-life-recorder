@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "package": "life-recorder",
+  "scope": "complete",
+  "expectedRows": 31,
+  "selector": {
+    "spec": "e2e/life-recorder-companion.spec.ts",
+    "config": "e2e/life-recorder-companion.playwright.config.ts"
+  },
+  "evidenceBoundary": "Desktop Chromium uses a synthetic browser microphone, local storage/crypto fixture, deterministic Shadow transcript, and deterministic model/transcription responses. This does not verify a physical microphone, locked iPhone capture, live Shadow/Core history, or a live model/provider round trip.",
+  "assertions": [
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "286",
+        "component": "App",
+        "tag": "Dialog",
+        "events": "onOpenChange"
+      },
+      "testTitle": "canceling a live recording keeps it running and confirmed discard returns to idle",
+      "assertionName": "Discard confirmation explains which temporary recording data is removed",
+      "assertionMarker": "Discard this recording?"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "299",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "canceling a live recording keeps it running and confirmed discard returns to idle",
+      "assertionName": "Cancel closes the confirmation while capture remains active",
+      "assertionMarker": "Cancel"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "305",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "canceling a live recording keeps it running and confirmed discard returns to idle",
+      "assertionName": "Confirm discard returns the microphone control to idle",
+      "assertionMarker": "Discard recording"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "325",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Import audio opens the deterministic local file-import path",
+      "assertionMarker": "Import audio"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "339",
+        "component": "App",
+        "tag": "input",
+        "events": "onChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Importing a WAV clears the file control after showing its transcript",
+      "assertionMarker": "Import audio recording"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "370",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "records, saves and reads back a transcript with a deterministic local model recap",
+      "assertionName": "Starting capture changes the visible control to Stop and transcribe",
+      "assertionMarker": "Stop and transcribe"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "384",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "rewinds Shadow speech and keeps the selected range visible after saving",
+      "assertionName": "A 15-second Shadow rewind displays its selected transcript draft",
+      "assertionMarker": "What was just said"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "387",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "rewinds Shadow speech and keeps the selected range visible after saving",
+      "assertionName": "The five-minute rewind displays the broader conversation range",
+      "assertionMarker": "Recent conversation"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "394",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Add a note opens the private moment editor",
+      "assertionMarker": "Add a note"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "414",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "canceling a live recording keeps it running and confirmed discard returns to idle",
+      "assertionName": "The active capture status exposes its discard action",
+      "assertionMarker": "Discard recording"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "450",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "reloads the private library after a deterministic storage error",
+      "assertionName": "Reload library recovers from a transient storage error and displays the empty state",
+      "assertionMarker": "Reload library"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "468",
+        "component": "App",
+        "tag": "Input",
+        "events": "onChange"
+      },
+      "testTitle": "records, saves and reads back a transcript with a deterministic local model recap",
+      "assertionName": "Search finds the saved transcript by a spoken name",
+      "assertionMarker": "Search moments"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "475",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Recent filter restores both saved audio and the unsaved note",
+      "assertionMarker": "Recent"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "483",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Saved filter hides the unsaved note and retains the imported moment",
+      "assertionMarker": "Saved"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "502",
+        "component": "App",
+        "tag": "RyuAppListItem",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Selecting the note row opens its title and transcript details",
+      "assertionMarker": "Team lunch follow-up"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "547",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "records, saves and reads back a transcript with a deterministic local model recap",
+      "assertionName": "The mobile detail action returns to the searchable moments list",
+      "assertionMarker": "Back to moments"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "583",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "records, saves and reads back a transcript with a deterministic local model recap",
+      "assertionName": "Saving capture keeps the moment in the library and shows Unsave moment",
+      "assertionMarker": "Save moment"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "617",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "records, saves and reads back a transcript with a deterministic local model recap",
+      "assertionName": "Create and regenerate recap render the deterministic fixture summary",
+      "assertionMarker": "Recap added to your moment."
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "663",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Export text opens the generated Markdown document for the selected note",
+      "assertionMarker": "Export text"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "671",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Delete action opens confirmation and removes only the selected note when confirmed",
+      "assertionMarker": "Delete moment"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "691",
+        "component": "App",
+        "tag": "Dialog",
+        "events": "onOpenChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "The note editor opens, closes on cancel, and can be opened again",
+      "assertionMarker": "Add a moment"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "701",
+        "component": "App",
+        "tag": "Input",
+        "events": "onChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "The entered note title is rendered in detail and its recent row",
+      "assertionMarker": "Moment title"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "710",
+        "component": "App",
+        "tag": "Textarea",
+        "events": "onChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "The note body is visible in its transcript and exported Markdown",
+      "assertionMarker": "What happened"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "719",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Cancel exits the note editor without creating the cancelled draft",
+      "assertionMarker": "Cancelled note"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "726",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Add moment creates the note and shows its visible success receipt",
+      "assertionMarker": "Moment added."
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "732",
+        "component": "App",
+        "tag": "Dialog",
+        "events": "onOpenChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Delete confirmation states which moment data will be removed",
+      "assertionMarker": "Delete this moment?"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "742",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Cancel closes delete confirmation and preserves selected note details",
+      "assertionMarker": "Cancel"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "749",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Confirmed deletion removes the note and shows the deleted receipt",
+      "assertionMarker": "Moment deleted."
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "769",
+        "component": "App",
+        "tag": "Dialog",
+        "events": "onOpenChange"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Export opens a named text dialog for the selected moment",
+      "assertionMarker": "Export moment"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "778",
+        "component": "App",
+        "tag": "Textarea",
+        "events": "onFocus"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Focusing the export field selects all generated Markdown for copying",
+      "assertionMarker": "Exported moment"
+    },
+    {
+      "row": {
+        "package": "life-recorder",
+        "source_file": "apps-store/life-recorder/ui/src/App.tsx",
+        "line": "786",
+        "component": "App",
+        "tag": "Button",
+        "events": "onClick"
+      },
+      "testTitle": "imports WAV, adds a note, exports Markdown, and confirms deletion",
+      "assertionName": "Done closes the export dialog and returns to the note detail",
+      "assertionMarker": "Done"
+    }
+  ]
+}
