@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ryu.life-recorder",
+  "version": "0.3.1",
+  "description": "Recall recent speech with Shadow, transcribe recordings, and keep private conversation recaps and searchable moments.",
+  "author": {
+    "name": "Ryu",
+    "url": "https://ryuhq.com"
+  },
+  "homepage": "https://github.com/amajorai/ryu-life-recorder",
+  "repository": "https://github.com/amajorai/ryu-life-recorder",
+  "keywords": ["life recorder", "conversations", "shadow", "rewind", "recaps"],
+  "extensions": {
+    "com.ryuhq.ryu": {
+      "id": "@ryu/life-recorder",
+      "displayName": "Life Recorder"
+    }
+  }
+}
